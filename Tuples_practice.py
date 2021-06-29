@@ -1,0 +1,6 @@
+counties_tuple = ("Arapahoe", "Denver", "Jefferson")
+print(counties_tuple)
+print(len(counties_tuple))
+print(counties_tuple[1])
+print(counties_tuple[:2])
+print(counties_tuple[:-1])
