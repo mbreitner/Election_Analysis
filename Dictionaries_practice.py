@@ -27,3 +27,5 @@ voting_data.append({"county": "Arapahoe", "registered_voters": 422829})
 voting_data.remove({"county": "Denver", "registered_voters": 463353})
 voting_data.pop(3)
 print(voting_data)
+
+## You can append a dictionary to a list

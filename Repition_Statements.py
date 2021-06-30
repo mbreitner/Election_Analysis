@@ -64,8 +64,10 @@ voting_data = [{"county":"Arapahoe", "registered_voters": 422829},
         #print(value)
 
 ## find only the number of registered voters in each county
-for county_dict in voting_data:
-    print(county_dict['registered_voters'])
+#for county_dict in voting_data:
+    #print(county_dict['registered_voters'])
 ## to find the county only replace 'registered voters' with 'county in the last line
-for county_dict in voting_data:
-    print(county_dict['county'])
+#for county_dict in voting_data:
+    #print(county_dict['county'])
+
+

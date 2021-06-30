@@ -50,5 +50,52 @@ counties.append("Arapahoe")
 print(counties)
 
 
-##tuples
-counties_tuple = ("Arapahoe", "Denver", "Jefferson")
+# Import the datetime class from the datetime module.
+import datetime as dt
+#use the now() attribute on the datetime class to get the present time.
+now = dt.datetime.now()
+#print the present time.
+print("The time right now is ", now)
+
+#import a csv file
+import csv
+dir(csv)
+
+#finding fuctions in a dictionary
+dir({'Arapahoe': 422829, 'Denver': 463353, 'Jefferson': 432438})
+
+#finding functions in a string
+dir(str)
+
+
+
+# Add our dependencies
+import csv
+import os
+# Assign a variable for the file to load and the path.
+file_to_load = os.path.join("Resources", "election_results.csv")
+# Open the election results and read the file. 
+with open(file_to_load) as election_data:
+# Print the file object
+    print(election_data)
+
+#create a filename variable to a direct or indirect path to the file.
+file_to_save = os.path.join("Analysis", "election_analysis.txt")
+# Using the open () function with the "w" mode we will write data to the file.
+open(file_to_save, "w")
+# create a filename variable to a direct or indirect path to the file.
+file_to_save = os.path.join("Analysis", "election_analysis.txt")
+#using the with statement open the file as a text file.
+outfile = open(file_to_save, "w")
+#write some data to the filte.
+outfile.write("Hello World")
+# close the file
+outfile.close()
+
+# using the with statement open the file as a text file.
+with open(file_to_save, "w") as txt_file:
+
+#write some data to the file. 
+    txt_file.write("Counties in the election\n-----------------\nArapahoe\nDenver\nJefferson")
+# to do it comma separate do variabale.write("x, x, x")
+#to put it on a new line do variable.write("x\nx\nx\n")
